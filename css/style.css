@@ -1,0 +1,82 @@
+html{
+    font-size: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montagu+Slab:opsz@16..144&display=swap');
+
+body{
+    max-width: 87.5rem;
+    background-color:#B5B5B5;
+    color: ;
+    line-height: 1.5;
+    margin: 5rem auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: var(--DEEP-YELLOW, #B8910B);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2{
+    color: var(--DEEP-BLUE, #15157A);
+font-family: Dela Gothic One;
+font-size: 1.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+h3{
+    font-family: 'Montagu Slab', serif;
+    color: var(--DARK-GREY, #3A3A3A);
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    color: var(--DEEP-YELLOW, #B8910B); 
+    text-decoration: none;
+    margin: 0 0 0 6.5;
+}
+
+a h1:underline{
+    text-decoration: underline;
+}
+
+main{
+
+}
+
+footer{
+    color: var(--DEEP-YELLOW, #B8910B);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
