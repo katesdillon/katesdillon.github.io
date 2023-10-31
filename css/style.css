@@ -1,23 +1,35 @@
-html{
-    font-size: 16px;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montagu+Slab:opsz@16..144&display=swap');
 
+html{
+    font-size: 16px;
+}
+
+
 body{
     max-width: 87.5rem;
     background-color:#B5B5B5;
-    color: ;
+    font-family: 'Montagu Slab', serif;
+    color: var(--DARK-GREY, #3A3A3A);
     line-height: 1.5;
-    margin: 5rem auto;
+    margin: auto;
 }
 
 header{
+    background-color: #15157A;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+section{
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
 }
 
 h1{
@@ -32,7 +44,7 @@ h1{
 }
 
 h2{
-    color: var(--DEEP-BLUE, #15157A);
+color: var(--DEEP-BLUE, #15157A);
 font-family: Dela Gothic One;
 font-size: 1.875rem;
 font-style: normal;
@@ -55,10 +67,17 @@ nav{
     justify-content: space-between;
 }
 
+nav a {
+    color: var(--DEEP-YELLOW, #B8910B); 
+    text-decoration: none;
+    margin: 0 0 0 6.5rem;
+
+}
+
 a{
     color: var(--DEEP-YELLOW, #B8910B); 
     text-decoration: none;
-    margin: 0 0 0 6.5;
+  
 }
 
 a h1:underline{
@@ -66,10 +85,73 @@ a h1:underline{
 }
 
 main{
+    display: grid;
+}
 
+#byline{
+    text-align: center;
+    grid-column: 2/11;
+    color:  var(--DEEP-RED, #8C0D08);
+}
+
+#byline h1 {
+    color:  var(--DEEP-RED, #8C0D08);
+}
+
+#kusf{
+    grid-column: 2/6;
+}
+
+#kusfdesc{
+    grid-column: 7/12;
+}
+
+#norav{
+    grid-column: 7/11;
+}
+
+#noravdesc{
+    grid-column: 2/6;
+}
+
+#breathe{
+    grid-column: 1/6;
+}
+
+#breathedesc{
+    grid-column: 6/12;
+}
+
+#dfcollage{
+    grid-column: 8/12;
+}
+
+#archdesc{
+    grid-column: 1/7;
+}
+
+#background{
+    background-image: url("katedillonabout.jpg");
+}
+
+#abouttext{
+    grid-column: 2/8;
+}
+
+#contacttext{
+    display: flex;
+    align-items: center;
+}
+
+#darkgrey{
+    background-color:#737373;
+    color:#B5B5B5;
+    max-width: 87.5rem;
+    grid-column: 1/12;
 }
 
 footer{
+    background-color: #15157A;
     color: var(--DEEP-YELLOW, #B8910B);
     font-family: 'Dela Gothic One', sans-serif;
     font-size: 2.5rem;
