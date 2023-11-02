@@ -9,19 +9,23 @@ html{
 
 
 body{
-    max-width: 87.5rem;
+    width: 100%;
     background-color:#B5B5B5;
     font-family: 'Montagu Slab', serif;
     color: var(--DARK-GREY, #3A3A3A);
     line-height: 1.5;
     margin: auto;
+    min-height: 100vh;
 }
 
 header{
+    width: 100%;
+    padding: 1rem; 
     background-color: #15157A;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem; 
 }
 
 section{
@@ -64,7 +68,8 @@ h3{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-right: 2rem;
 }
 
 nav a {
@@ -85,10 +90,11 @@ a h1:underline{
 }
 
 main{
-    display: grid;
+    margin: 0; 
 }
 
 #byline{
+    padding-left: 5rem;
     text-align: center;
     grid-column: 2/11;
     color:  var(--DEEP-RED, #8C0D08);
@@ -103,22 +109,25 @@ main{
 }
 
 #kusfdesc{
-    grid-column: 7/12;
+    padding-top: 3rem;
+    grid-column: 6/11;
 }
 
 #norav{
-    grid-column: 7/11;
+    grid-column: 9/11;
 }
 
 #noravdesc{
-    grid-column: 2/6;
+    padding-top: 2rem;
+    grid-column: 2/8;
 }
 
 #breathe{
-    grid-column: 1/6;
+    grid-column: 2/6;
 }
 
 #breathedesc{
+    padding-top: 1rem;
     grid-column: 6/12;
 }
 
@@ -127,30 +136,96 @@ main{
 }
 
 #archdesc{
-    grid-column: 1/7;
+    grid-column: 2/7;
+}
+
+#zinecover{
+    grid-column: 2/7;
+}
+
+#pooldesc{
+    padding-top: 5rem;
+    grid-column: 7/12;
 }
 
 #background{
     background-image: url("katedillonabout.jpg");
-}
-
-#abouttext{
-    grid-column: 2/8;
-}
-
-#contacttext{
-    display: flex;
     align-items: center;
 }
 
-#darkgrey{
+#abouttext{
+    background-image: url('../img/katedillonabout.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0; 
+    background-attachment: fixed;
+    width: 100%; 
+    height: 600px;
+    margin: 0px; 
+}
+
+#aboutbio {
+    width: 75%; 
+   position: absolute; 
+   top: 25rem; 
+   left: 3rem; 
+}
+
+#contacttext{
+    align-items: center;
+    padding-left: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+#contacttext h1{
+    color:  var(--DEEP-RED, #8C0D08);
+}
+
+#contacttext h2{
+    color: var(--DARK-GREY, #3A3A3A);
+}
+
+#darkgrey1{
     background-color:#737373;
     color:#B5B5B5;
-    max-width: 87.5rem;
-    grid-column: 1/12;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#darkgrey2{
+    background-color:#737373;
+    color:#B5B5B5;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#darkgrey3{
+    background-color:#737373;
+    color:#B5B5B5;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
 }
 
 footer{
+    position: static;
+    bottom: 0px;
+    width: 100%;
     background-color: #15157A;
     color: var(--DEEP-YELLOW, #B8910B);
     font-family: 'Dela Gothic One', sans-serif;
@@ -160,5 +235,43 @@ footer{
     line-height: normal;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 3rem; 
+    margin-top: auto;
+}
+
+#aboutfooter{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #15157A;
+    color: var(--DEEP-YELLOW, #B8910B);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem; 
+    margin-top: auto;
+}
+
+#contactfooter{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #15157A;
+    color: var(--DEEP-YELLOW, #B8910B);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem; 
+    margin-top: auto;
 }
